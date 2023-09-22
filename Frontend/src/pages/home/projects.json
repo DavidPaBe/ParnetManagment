@@ -1,0 +1,20 @@
+{
+    "proyecto": "Partner",
+    "financiamiento": 15000.50,
+    "lider": "David Paez",
+    "telefono": "664-349-7776",
+    "integrantes": [
+      {
+        "nombre": "Juan Pérez",
+        "email": "juan@example.com"
+      },
+      {
+        "nombre": "María Rodríguez",
+        "email": "maria@example.com"
+      },
+      {
+        "nombre": "Carlos Sánchez",
+        "email": "carlos@example.com"
+      }
+    ]
+  }
