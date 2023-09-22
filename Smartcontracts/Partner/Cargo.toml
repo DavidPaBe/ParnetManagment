@@ -1,0 +1,19 @@
+[package]
+name = "partner"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+gstd = { git = "https://github.com/gear-tech/gear.git", rev = "946ac47", features = ["debug"] }
+parity-scale-codec = { version = "3", default-features = false }
+scale-info = { version = "2", default-features = false }
+partner-io = {path="io"}
+partner-state = {path="state"}
+
+[build-dependencies]
+gear-wasm-builder = { git = "https://github.com/gear-tech/gear.git", rev = "946ac47", features = ["wasm-opt"] }
+partner-io = {path="io"}
+partner-state = {path="state"}
+
+[dev-dependencies]
+gtest = { git = "https://github.com/gear-tech/gear.git", rev = "946ac47" }
