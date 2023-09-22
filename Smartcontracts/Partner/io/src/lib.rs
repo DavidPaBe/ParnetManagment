@@ -1,6 +1,6 @@
 #![no_std]
 
-// Importación de las bibliotecas necesarias.
+// Librerias necesarias.
 use gmeta::{In, InOut, Metadata};
 use gstd::{msg, prelude::*, ActorId};
 use scale_info::TypeInfo;
