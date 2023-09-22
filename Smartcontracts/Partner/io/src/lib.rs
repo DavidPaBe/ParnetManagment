@@ -5,7 +5,7 @@ use gstd::{msg, prelude::*, ActorId};
 use scale_info::TypeInfo;
 
 pub struct ProgramMetadata;
-
+// HOLA, GAY EL QUE LO LEA
 impl Metadata for ProgramMetadata {
     type Init = In<InitPartner>;
     type Handle = InOut<PartnerAction, PartnerEvent>;
