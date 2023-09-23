@@ -30,7 +30,7 @@ function CrearProyecto() {
     const finalRef = React.useRef(null)
     return (
         <>
-            <Button colorScheme='blue' size='lg' padding='40px' onClick={onOpen}>Crear Proyecto</Button>
+            <Button colorScheme='green' size='lg' padding='40px' onClick={onOpen}>Crear Proyecto</Button>
 
             <Modal
                 initialFocusRef={initialRef}
@@ -82,7 +82,7 @@ function ConfigurarProyecto() {
     const finalRef = React.useRef(null)
     return (
         <>
-            <Button colorScheme='blue' size='lg' padding='40px' margin='40px' onClick={onOpen}>Configurar Proyecto</Button>
+            <Button colorScheme='green' size='lg' padding='40px' margin='40px' onClick={onOpen}>Configurar Proyecto</Button>
 
             <Modal
                 initialFocusRef={initialRef}
@@ -136,7 +136,7 @@ function AgregarActividad() {
     const finalRef = React.useRef(null)
     return (
         <>
-            <Button colorScheme='blue' size='lg' padding='40px' onClick={onOpen}>Agregar Actividad</Button>
+            <Button colorScheme='green' size='lg' padding='40px' onClick={onOpen}>Agregar Actividad</Button>
 
             <Modal
                 initialFocusRef={initialRef}
@@ -183,7 +183,7 @@ function Configurar() {
     const finalRef = React.useRef(null)
     return (
         <>
-            <Button colorScheme='blue' size='lg' padding='40px' onClick={onOpen}>Configurar</Button>
+            <Button colorScheme='green' size='lg' padding='40px' onClick={onOpen}>Configurar</Button>
 
             <Modal
                 initialFocusRef={initialRef}
@@ -232,7 +232,7 @@ function Actividad() {
     const finalRef = React.useRef(null)
     return (
         <>
-            <Button colorScheme='blue' size='lg' padding='40px' onClick={onOpen}>Actividad</Button>
+            <Button colorScheme='green' size='lg' padding='40px' onClick={onOpen}>Actividad</Button>
 
             <Modal
                 initialFocusRef={initialRef}
@@ -267,7 +267,7 @@ function ConfirmarActividad() {
     const finalRef = React.useRef(null)
     return (
         <>
-            <Button colorScheme='blue' size='lg' padding='40px' onClick={onOpen}>Revisar</Button>
+            <Button colorScheme='green' size='lg' padding='40px' onClick={onOpen}>Revisar</Button>
 
             <Modal
                 initialFocusRef={initialRef}

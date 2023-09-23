@@ -27,21 +27,24 @@ import { TransferButton } from './Transfer';
 function Proyectos() {
 
   return (
-    <GridItem h='100%' w='100%' bg='green'>
-      <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(2,1fr)' gap={6}>
-        <GridItem rowSpan={2} colSpan={1} bg='blue.500'>
-          <Image src='https://webslima.net/wp-content/uploads/logotipo-constructora-cemex.jpg' alt='Dan Abramov' width='100%' />
-        </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg='blue.500'>
-          Nombre del Proyecto
-        </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg='blue.500'>
-          $15000.00
-        </GridItem>
-        <GridItem rowSpan={1} colSpan={2} bg='blue.500'>
-          Descripcion del Proyecto
-        </GridItem>
-      </Grid>
+    <GridItem className='Cuadro' h='100%' w='100%' border='2px' color='gray.600'   bgGradient='linear(to-r, teal.500, green.500)'
+    _hover={{
+      bgGradient: 'linear(to-r, red.500, yellow.500)',
+    }}>
+        <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(2,1fr)' gap={6} color='white'>
+          <GridItem rowSpan={2} colSpan={1}>
+            <Image src='https://images.vexels.com/media/users/3/142887/isolated/preview/fc58c5ffb8c2e33fc3e15a2453189825-logotipo-de-empresa-logistica-en-crecimiento.png' alt='Dan Abramov' width='120px' />
+          </GridItem>
+          <GridItem rowSpan={1} colSpan={1}>
+            Nombre del Proyecto
+          </GridItem>
+          <GridItem rowSpan={1} colSpan={1}>
+            $15000.00
+          </GridItem>
+          <GridItem rowSpan={1} colSpan={2}>
+            Descripcion del Proyecto
+          </GridItem>
+        </Grid>
     </GridItem>
   )
 }
@@ -49,18 +52,18 @@ function Proyectos() {
 function Actividades() {
 
   return (
-    <GridItem rowSpan={1} colSpan={1} h='100%' w='100%' bg='green'>
+    <GridItem rowSpan={1} colSpan={1} h='100%' w='100%'>
       <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(2,1fr)' gap={6}>
-        <GridItem rowSpan={1} colSpan={1} bg='blue.500'>
+        <GridItem rowSpan={1} colSpan={1}>
           Actividad
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg='blue.500'>
+        <GridItem rowSpan={1} colSpan={1}>
           $750 P
         </GridItem>
-        <GridItem rowSpan={2} colSpan={1} bg='blue.500'>
+        <GridItem rowSpan={2} colSpan={1}>
           <Actividad />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={2} bg='blue.500'>
+        <GridItem rowSpan={1} colSpan={2}>
           Estado: No entregado
         </GridItem>
       </Grid>
@@ -72,18 +75,18 @@ function Actividades() {
 function Confirmar() {
 
   return (
-    <GridItem rowSpan={1} colSpan={1} h='100%' w='100%' bg='green'>
+    <GridItem rowSpan={1} colSpan={1} h='100%' w='100%'>
       <Grid templateColumns='repeat(3, 1fr)' templateRows='repeat(2,1fr)' gap={6}>
-        <GridItem rowSpan={1} colSpan={1} bg='blue.500'>
+        <GridItem rowSpan={1} colSpan={1}>
           Actividad
         </GridItem>
-        <GridItem rowSpan={1} colSpan={1} bg='blue.500'>
+        <GridItem rowSpan={1} colSpan={1}>
           $750 P
         </GridItem>
-        <GridItem rowSpan={2} colSpan={1} bg='blue.500'>
+        <GridItem rowSpan={2} colSpan={1}>
           <ConfirmarActividad />
         </GridItem>
-        <GridItem rowSpan={1} colSpan={2} bg='blue.500'>
+        <GridItem rowSpan={1} colSpan={2}>
           Estado: En Revision
         </GridItem>
       </Grid>
@@ -112,47 +115,51 @@ function Home() {
       templateRows='repeat(5, 1fr)'
       templateColumns='repeat(5, 1fr)'
       gap={4}
+
+      color='white' fontWeight='bold'
     >
-      <GridItem rowSpan={1} colSpan={4} bg='tomato'>
+      <GridItem rowSpan={1} colSpan={4} bgGradient='linear(to-l, #380036, #0CBABA)' color='white' fontWeight='bold'>
         <Wrap spacing='30px' padding='40px'>
           <WrapItem>
-            <Center w='80px' h='80px' bg='green.200'>
+            <Center w='80px' h='80px'>
               <Image src='https://i0.wp.com/lamiradafotografia.es/wp-content/uploads/2014/07/foto-perfil-psicologo-180x180.jpg?resize=180%2C180' alt='foto' h='100%' />
             </Center>
           </WrapItem>
           <WrapItem>
-            <Center w='180px' h='80px' bg='red.200'>
+            <Center w='180px' h='80px'>
               Nombre: {Nombre}
             </Center>
           </WrapItem>
           <WrapItem>
-            <Center w='240px' h='80px' bg='green.200'>
+            <Center w='240px' h='80px'>
               Correo: {Correo}
             </Center>
           </WrapItem>
           <WrapItem>
-            <Center w='180px' h='80px' bg='green.200'>
+            <Center w='180px' h='80px'>
               Telefono: {Telefono}
             </Center>
           </WrapItem>
         </Wrap>
       </GridItem>
-      <GridItem rowSpan={1} colSpan={1} bg='gray' padding='40px'>
+      <GridItem rowSpan={1} colSpan={1} bgGradient='linear(to-l, #0CBABA ,#380036)' padding='40px'>
         <Center>
           <Configurar />
         </Center>
       </GridItem>
-      <GridItem rowSpan={4} colSpan={2} bg='papayawhip'>
+      <GridItem rowSpan={4} colSpan={2} bgGradient='linear(to-l, #5F0A87 ,#A4508B)'>
         <Grid templateRows='repeat(5, 1fr)' gap={6}>
           <Proyectos />
-          <GridItem h='80px' w='100%' bg='green'>
+          <Proyectos />
+          <Proyectos />
+          <GridItem h='80px' w='100%'>
             <Center>
               <CrearProyecto />
             </Center>
           </GridItem>
         </Grid>
       </GridItem >
-      <GridItem rowSpan={3} colSpan={3} bg='papayawhip' color='white'>
+      <GridItem rowSpan={3} colSpan={3} bgGradient='linear(to-l, #5F0A87 ,#A4508B)' color='white'>
         <Grid
           h='250px'
           w="100%"
@@ -160,20 +167,20 @@ function Home() {
           templateColumns='repeat(6, 1fr)'
           gap={4}
         >
-          <GridItem rowSpan={2} colSpan={2} bg='gray'>
-            <Center><Image src='https://webslima.net/wp-content/uploads/logotipo-constructora-cemex.jpg' alt='Dan Abramov' h='160px' /></Center>
+          <GridItem rowSpan={2} colSpan={2} >
+            <Center><Image src='https://images.vexels.com/media/users/3/142887/isolated/preview/fc58c5ffb8c2e33fc3e15a2453189825-logotipo-de-empresa-logistica-en-crecimiento.png' alt='Dan Abramov' h='160px' /></Center>
           </GridItem>
-          <GridItem colSpan={2} bg='gray'>
+          <GridItem colSpan={2}>
             Nombre: Proyecto1
           </GridItem>
-          <GridItem colSpan={2} bg='gray'>
+          <GridItem colSpan={2}>
             Financiamiento: $0.00
           </GridItem>
-          <GridItem colSpan={4} bg='gray'>
+          <GridItem colSpan={4}>
             Descripción del Proyecto:
           </GridItem>
-          <GridItem colSpan={6} bg='gray'>
-            <Progress colorScheme='green' height='32px' value={80} margin='20px'/>
+          <GridItem colSpan={6}>
+            <Progress colorScheme='green' height='32px' value={80} margin='20px' />
           </GridItem>
         </Grid>
         <Grid templateRows='repeat(3, 1fr)' templateColumns='repeat(2,1fr)' gap={6} padding='20px'>
@@ -181,7 +188,7 @@ function Home() {
           <Confirmar />
         </Grid>
       </GridItem>
-      <GridItem rowSpan={1} colSpan={3} bg='tomato'>
+      <GridItem rowSpan={1} colSpan={3} bgGradient='linear(to-l, #0CBABA ,#380036)'>
         <ConfigurarProyecto />
         <AgregarActividad />
       </GridItem>
